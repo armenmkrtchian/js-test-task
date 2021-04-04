@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Javascript test task</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+</head>
+
+<body>
+    <main>
+
+        <div class="content">
+            <h1>Armen Mkrtchyan</h1>
+            <h2>Interview Date 30-03-2021</h2>
+            <form>
+
+                <div class="row">
+                    <label for="defaultMarkup">Default Markup</label>
+                    <input type="number" id="default-markup" name="defaultMarkup" value="52" min="10" max="99.99">
+                    <span>%</span>
+                </div>
+
+                <br>
+
+                <div class="row">
+                    <label for="cost">Cost</label>
+                    <input type="number" id="cost" name="cost" required min="0">
+                    <span>$</span>
+                </div>
+                <div id="required-message" class="error">
+                    <p>Please fill out this field</p>
+                </div>
+                <div id="invalid-message" class="error">
+                    <p>Value must be greater than 0</p>
+                </div>
+
+                <br>
+
+                <div class="row">
+                    <label for="tax-rate">Tax Rate</label>
+                    <select name="tax-rate" id="tax-rate">
+                        <option value="7" selected>7%</option>
+                        <option value="20">20%</option>
+                        <option value="0">0%</option>
+                    </select>
+                </div>
+
+                <br>
+
+                <div class="row">
+                    <label for="rounding-rule">Rounding Rule</label>
+                    <select name="rounding-rule" id="rounding-rule">
+                        <option value="95" selected>95</option>
+                        <option value="99">99</option>
+                        <option value="00">00</option>
+                    </select>
+                </div>
+
+                <br>
+
+                <div class="row">
+                    <label for="pricing-mode">Pricing Mode</label>
+                    <select name="pricing-mode" id="pricing-mode">
+                        <option value="tax-exclusive-price">Tax Exclusive Prices</option>
+                        <option value="tax-inclusive-price">Tax Inclusive Prices</option>
+                    </select>
+
+                </div>
+
+                <br>
+
+                <table>
+                    <tr>
+                        <td>Tax Inclusive Price</td>
+                        <td data-tax-inclusive-price>0.00</td>
+                    </tr>
+                    <tr>
+                        <td>Tax Exclusive Price</td>
+                        <td data-tax-exclusive-price>0.00</td>
+                    </tr>
+                    <tr>
+                        <td>Gross Profit (%)</td>
+                        <td data-gross-profit-in-percent="0.00">0.00</td>
+                    </tr>
+                    <tr>
+                        <td>Gross Profit ($)</td>
+                        <td data-gross-profit-in-dollar="0.00">0.00</td>
+                    </tr>
+                </table>
+                <input type="submit" value="Calculate" onclick="calculate(event)">
+
+            </form>
+
+        </div>
+    </main>
+</body>
+<script src="index.js"></script>
+
+</html>

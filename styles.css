@@ -1,0 +1,91 @@
+body {
+    background-color: #9fc5f8;
+}
+
+main {
+    display: flex;
+}
+
+.content {
+    margin: auto;
+    justify-content: center;
+}
+
+.content .error {
+    display: none;
+    color: #f00;
+    text-align: right;
+}
+
+.error p {
+    margin: 0;
+}
+
+form {
+    width: 400px;
+    padding-left: 200px;
+}
+
+input {
+    width: 70%;
+    height: 20px;
+    border: none;
+}
+
+input[type="submit"] {
+    background-color: #b45f06;
+    border: none;
+    color: #fff;
+    height: 70px;
+    width: 70%;
+    font-size: 20px;
+    margin-left: 30%;
+    margin-top: 20px;
+}
+
+select {
+    width: 70%;
+    outline: none;
+    border: none;
+    height: 26px;
+    padding-left: 5px;
+}
+
+.row {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    padding: 8px 0;
+    width: 100%;
+}
+
+.row span {
+    position: absolute;
+    right: 4px;
+    top: 10px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 70%;
+    margin-left: 30%;
+}
+
+td,
+th {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #ddd;
+}
+
+tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+span {
+    background-color: #fff;
+}
